@@ -75,7 +75,7 @@ jobs:
         mv ../porto_${{env.VERSION}}_${{matrix.arch}}.deb porto_${{env.UBUNTU_NAME}}_${{env.VERSION}}_${{matrix.arch}}.deb
 
     - name: Upload Debian package
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v7
       with:
         name: packages
         path: porto_${{env.UBUNTU_NAME}}_${{env.VERSION}}_${{matrix.arch}}.deb
